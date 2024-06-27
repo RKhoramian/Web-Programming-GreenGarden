@@ -658,7 +658,7 @@ input::-webkit-input-placeholder {
 /*              ABOUT US PAGE          */
 
 .about-main-section{
-    background: url("../img/aboutUs/mainPic.png") center center;
+    background: url("../img/mainPic.png") center center;
     background-color: #2daa3f !important;
     height: 370px;
     position: relative;

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Green Garden</title>
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+       
+    </head>
+    <body>
+        <header id="topnav">
+            <div class="container">
+                <!-- Logo container-->
+                <div class="logo-div">
+                    <a class="logo" href="index.html" style="text-decoration: none;" >
+                    <img src="img/green garden2.svg" class="logo-img" alt="green-garden-log">
+                    Green Garden
+                    </a>
+                </div>                 
+                <!-- End Logo container-->
+
+                <!-- Navigation  container-->
+                <div id="navigation">
+                    <ul class="navigation-menu">
+                        <li>
+                            <a href="../HomePage/index.html">صفحه اصلی</a>
+                        </li>
+                        <li>
+                            <a href="../Suggestion/suggetionPage.html">پیشنهاد گیاه </a>
+                        </li>
+                        <li>
+                            <a href="#">درباره ما </a>
+                        </li>
+                    </ul>
+                </div>
+                  <!-- End Navigation container-->
+
+                   <!-- Button container-->
+                <div class="button-container">
+                     
+                    <a class="icon-button icon-search" href="#newsBanner" onclick="startTimer()">
+                        <img src="img/icon/search.svg" alt="Search-Icon" >
+                    </a>
+                    
+                    <a class="icon-button icon-back-green" href="#newsBanner" onclick="startTimer()">
+                        <img src="img/icon/saved.svg" alt="Saved-Icon">
+                    </a>
+                    <a class="icon-button icon-back-green">
+                        <img src="img/icon/user_icon.svg" alt="User-Icon">
+                    </a>
+                    
+                    <!-- بنر   -->
+                    <div id="newsBanner" class="news-Banner">
+                        <div class="newsBanner-content">
+                        <a href="#" class="close-btn" onclick="stopTimer()">&times;</a>
+                        <img src="img/404 Error.gif" alt="خبرنامه" class="newsBanner-image">
+                        <p class="newsBanner-text"> این صفحه هنوز درست نشده !!</p>
+                        <p id="timer">زمان باقی‌مانده: <span id="time">3</span> ثانیه</p>
+                        </div>
+                    </div>
+                </div>
+                  <!-- End Button container-->
+            </div>
+        </header>
+        <main>
+            <section class="about-main-section" >
+                <div class="about-main">
+                    <h4>درباره ما</h4>
+                </div>
+            </section>
+
+            <section class="introduction">
+                <div class="introduction-container">
+                    <div class="introducing-us">
+                        <img class="about-us-img" src="./img/aboutUs/team.jpg" alt="team-pic">
+                        <div class="introducing-us-text">
+                            <h4>ما کی هستیم؟</h4>
+                            <p>شروع به کار ما درواقع یک <span style="color:  #6dc77a; font-weight: 700;">وبگردی</span> ساده بود !</p> <br>
+                            <p> یه تیم کوچولو موچوله توی یه دانشگاه نه چندان گنده منده که
+                                  اومدیم باهم یه پروژه درسی بزنیم و شاید در آینده دیگه محصولمون یه پروژه نبود ! 😉</p>
+                        </div>
+                    </div>
+                     
+                    <!-- Properties  -->
+                    <div class="properties-title">
+                        <h4>ویژگی‌های این سایت</h4>
+                    </div>
+                        
+                    <div class="properties-container introducing-us">
+                        <div class="properties-boxes">
+                            <img src="./img/aboutUs/monitor.svg" alt="">
+                            <h4>کاملا ریسپانسیو</h4>
+
+                        </div>
+                        <div class="properties-boxes">
+                            <img src="./img/aboutUs/monitor.svg" alt="">
+                            <h4>کاملا ریسپانسیو</h4>
+                        </div>
+                        <div class="properties-boxes">
+                            <img src="./img/aboutUs/monitor.svg" alt="">
+                            <h4>کاملا ریسپانسیو</h4>
+                        </div>
+                        <div class="properties-boxes">
+                            <img src="./img/aboutUs/monitor.svg" alt="">
+                            <h4>کاملا ریسپانسیو</h4>
+                        </div>
+                        <div class="properties-boxes">
+                            <img src="./img/aboutUs/monitor.svg" alt="">
+                            <h4>کاملا ریسپانسیو</h4>
+                        </div>
+                    </div>
+                     <!-- End Properties  --> 
+                </div>
+            </section>
+            <!-- our team pic & communication -->
+            <section class="our-team">
+                <div class="properties-title">
+                    <h4 style="padding-top: 60px;">تیم ما</h4>
+                </div>
+                <div class="pic-us-container">
+                    <div class="our-info">
+                        <img src="./img/aboutUs/reyhane.jpg" alt="reyhane-pic">
+                        <h5>ریحانه خرمیان</h5>
+
+                    </div>
+                    <div class="our-info">
+                        <img src="./img/aboutUs/yasmin.jpg" alt="yasmin-pic">
+                        <h5>یاسمین ترکی</h5>
+                    </div>
+                    <div class="our-info">
+                        <img src="./img/aboutUs/parnian.jpg" alt="parnian-pic">
+                        <h5>پرنیان علاسوندیان</h5>
+                    </div>
+                </div>
+            </section> 
+             
+             <section class="contact-section">
+                <div class="contact-info">
+                    <h2><i class="bi-telegram text-muted"></i>  ارتباط با ما :</h2>
+                    <hr class="divider">
+                    <p class="text-muted">برای تماس با ما آماده‌اید؟ <br>با ما تماس بگیرید یا پیام ارسال کنید تا در اسرع وقت با شما تماس بگیریم.   </p>
+                   
+                   <div class="contact-container"> 
+                        <h4><i class="bi-envelope text-muted"></i> ایمیل: </h4>
+                        <a href="mailto: GreenGarden@gmail.com">
+                            <div class="contact-box">  
+                                <span class="contact-btn">
+                                    GreenGarden@gmail.com
+                                </span>
+                            </div>
+                        </a>
+                   </div>
+
+                   <div class="contact-container"> 
+                        <h4><i class="bi-phone text-muted"></i> تلفن: </h4>
+                        <a href="tel:+989338504054">
+                            <div class="contact-box">  
+                                <span class="contact-btn" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                     989338504054+
+                                </span>
+                            </div>
+                        </a>
+                   </div>
+                    
+                 </div>
+
+                <div class="contact-location">  
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.1564048779796!2d51.656169175496935!3d32.6020150737372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbc37a2e618b343%3A0x1fcfc941583d0344!2z2K_Yp9mG2LTaqdiv2Ycg2YHZhtuMINmC2K_bjNmF!5e0!3m2!1sen!2s!4v1717149259150!5m2!1sen!2s" 
+                            width="100%" 
+                            height="440" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                    </iframe>
+                </div>
+            </section>
+            
+        </main>
+        
+
+        <footer>
+            <div class="footer-container container">
+                <div class="footer-section">
+                    <img src="./img/lg.svg" alt="Green Garden">
+                    <p>با خیالی آسوده گیاهی که مدت‌هاست دنبال آن می‌گردید را در اینجا پیدا کنید.</p>
+                </div>
+                <div class="footer-section">
+                    <h5>شرکت</h5>
+                    <ul class="footer-list">
+                        
+                        <li>
+                            <a href="./aboutUs.html">
+                            <svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m11.29 12l3.54-3.54a1 1 0 0 0 0-1.41a1 1 0 0 0-1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42L13.41 17a1 1 0 0 0 .71.29a1 1 0 0 0 .71-.29a1 1 0 0 0 0-1.41Z"/></svg>
+                            درباره ما</a>
+                        </li>
+                         
+                        <li>
+                            <a href="">
+                            <svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m11.29 12l3.54-3.54a1 1 0 0 0 0-1.41a1 1 0 0 0-1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42L13.41 17a1 1 0 0 0 .71.29a1 1 0 0 0 .71-.29a1 1 0 0 0 0-1.41Z"/>
+                            </svg>
+                            ورود</a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>خبرنامه</h5>
+                    <p>ثبت نام کنید و آخرین نکات را از طریق ایمیل دریافت کنید.</p>
+                    <form>
+                        <div class="form-section">
+                            <div class="form-email">
+                                <label class="form-label">ایمیل خود را بنویسید <span style="color: #e43f52 !important;">*</span> </label> 
+                                <br><input type="email" name="email" id="emailsubscribe" class="form-control-email" placeholder="ایمیل شما: " required="">   
+                            </div>
+                             
+                            <div class="form-news">
+                                <!-- <a id="submitsubscribe" class="btn-form-news"  href="#newsBanner" onclick="startTimer()"></a> -->
+                                    <input type="submit" id="submitsubscribe" name="send" class="btn-form-news" value="خبرنامه">
+                            </div>
+                       </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+       
+        <button id="scrollTopBtn" class="scroll-to-top">
+            <svg xmlns="https://www.svgrepo.com/svg/93813/up-arrow"  viewBox="0 0 24 24">
+                <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"></path>
+            </svg>
+        </button>
+        
+        <script src="./scripts/notYetBanner.js"></script>
+        <script src="./scripts/scripts.js" type="module"></script>
+    </body>
+</html>

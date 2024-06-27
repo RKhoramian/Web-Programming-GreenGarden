@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Vazir&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="illustration">
+            <img src="6_2.png" alt="Illustration">
+        </div>
+        <div class="login-form">
+            <h2>ورود</h2>
+            <form id="loginForm" action="#">
+                <label for="email">ایمیل</label>
+                <input type="email" id="email" name="email" placeholder="ایمیل">
+                <span class="error-message" id="email-error"></span>
+                
+                <label for="password">رمز عبور</label>
+                <input type="password" id="password" name="password" placeholder="رمز عبور">
+                <span class="error-message" id="password-error"></span>
+                
+                <div class="checkbox-container">
+                    <label for="remember-me">مرا به خاطر بسپار</label>
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                </div>
+                
+                <button type="submit" id="submitlogin">ورود</button>
+            </form>
+            <p>حساب کاربری ندارید؟ <a href="../SignUpPage/signup.html">ثبت نام</a></p>
+        </div>
+        <div class="back-button" id="backButton">
+            <img src="home.png" alt="Back">
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

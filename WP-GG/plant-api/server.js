@@ -83,7 +83,6 @@ app.post('/api/suggest-plant', (req, res) => {
         plant.temperature === temperature &&
         plant.humidity === humidity
     );
-    console.log('Success server:', suggestedPlant);
     if (suggestedPlant) {
         res.json(suggestedPlant);
     } else {

@@ -53,13 +53,10 @@ fetch('http://localhost:3000/api/suggest-plant', {
 })
 .then(response => response.json())
 .then(data => {
-    console.log('Success client:', data);
     const resultDiv = document.getElementById('suggestion-result');
     let environment = "";
     let light = "";
     let temperature = "";
-    console.log(data.name)
-    console.log(data.imageUrl)
     if (data.name) {
     //resultDiv.innerHTML = `<p>پیشنهاد ما: ${data.name}</p>`;
         if(data.environment == "indoor"){

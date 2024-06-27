@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suggestion Page</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,15 +32,28 @@
           </nav>
         </div>
         <div class="button-container">
-          <button class="icon-button icon-search">
-            <img src="search.svg" alt="Search-Icon" />
-          </button>
-          <button class="icon-button icon-back-green">
-            <img src="saved.svg" alt="Saved-Icon" />
-          </button>
-          <button class="icon-button icon-back-green">
-            <img src="user_icon.svg" alt="User-Icon" />
-          </button>
+                     
+          <a class="icon-button icon-search" href="#newsBanner" onclick="startTimer()">
+              <img src="search.svg" alt="Search-Icon" >
+          </a>
+          
+          <a class="icon-button icon-back-green" href="#newsBanner" onclick="startTimer()">
+              <img src="saved.svg" alt="Saved-Icon">
+          </a>
+          <a class="icon-button icon-back-green">
+              <img src="user_icon.svg" alt="User-Icon">
+          </a>
+          
+          <!-- بنر   -->
+          <div id="newsBanner" class="news-Banner">
+              <div class="newsBanner-content">
+              <a href="#" class="close-btn" onclick="stopTimer()">&times;</a>
+              <img src="../HomePage/img/404 Error.gif" alt="خبرنامه" class="newsBanner-image">
+              <p class="newsBanner-text"> این صفحه هنوز درست نشده !!</p>
+              <p id="timer">زمان باقی‌مانده: <span id="time">3</span> ثانیه</p>
+              </div>
+          </div>
+      </div>
         </div>
       </div>
     </header>
@@ -261,6 +274,7 @@
         ></path>
       </svg>
     </button>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
+    <script src="../HomePage/scripts/notYetBanner.js"></script>
   </body>
 </html>

@@ -415,4 +415,67 @@ footer .svg {
     cursor: pointer; 
     bottom: 30px; 
 } 
-/**/
+
+.news-Banner {
+    display: none; /* به طور پیش فرض پنهان */
+    position: fixed; /* در جای خود بماند */
+    z-index: 1; /* در بالای صفحه قرار گیرد */
+    left: 0;
+    top: 0;
+    width: 100%; /* عرض کامل */
+    height: 100%; /* ارتفاع کامل */
+    background-color: rgba(0,0,0,0.4); /* زمینه سیاه با شفافیت */
+    justify-content: center; /* مرکزیت افقی */
+    align-items: center; /* مرکزیت عمودی */
+  }
+  
+  /* محتوای بنر */
+.newsBanner-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* عرض ثابت برای بنر */
+    text-align: center;
+    position: relative;
+}
+  
+  /* دکمه بستن */
+.close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none; /* حذف خط زیر متن */
+}
+  
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+  /* استایل برای تصویر بنر */
+.newsBanner-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+  
+  /* استایل برای متن بنر */
+.newsBanner-text {
+    text-decoration: none; /* حذف خط زیر متن */
+}
+  
+  /* نمایش بنر زمانی که هدف باشد */
+.news-Banner:target {
+    display: flex; /* استفاده از فلکس‌باکس برای مرکزیت محتوا */
+}
+  
+  /* استایل برای تایمر */
+#timer {
+    margin-top: 10px;
+    font-weight: bold;
+}

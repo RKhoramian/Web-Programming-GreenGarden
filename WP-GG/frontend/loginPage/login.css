@@ -1,0 +1,143 @@
+body {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    margin: 0;
+    direction: rtl;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1000px;
+    height: 600px;
+    width: 100%;
+    margin: 20px;
+    position: relative; /* Add relative positioning to the container */
+}
+
+.illustration {
+    background-color: #ffe066;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.illustration img {
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+}
+
+.login-form {
+    background-color: #88cc88;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.login-form h2 {
+    margin: 0 0 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+.login-form label {
+    color: #fff;
+    margin-bottom: 10px 10px 0 0;
+}
+
+.login-form input,
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    border: none;
+    background-color: #ffcc33;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* You may adjust this margin as needed */
+}
+
+.login-form button:hover {
+    background-color: #ffbb00;
+}
+
+.login-form p {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-form p a {
+    color: #333;
+    text-decoration: none;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.login-form p a:hover {
+    color: #000;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.checkbox-container label {
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+.checkbox-container input {
+    margin-top: 15px;
+    margin-left: 250px; /* Adjust as needed to align with your design */
+}
+
+.error-message {
+    color: #ff4444;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none; /* Initially hidden */
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.back-button img {
+    width: 60px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+}
+
+.back-button:hover {
+    opacity: 0.7;
+}

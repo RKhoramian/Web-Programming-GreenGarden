@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazir&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="illustration">
+            <img src="illustration.png" alt="Illustration">
+        </div>
+        <div class="signup-form">
+            <h2>ثبت نام</h2>
+            <form action="#">
+                <label for="username">نام کاربری</label>
+                <input type="text" id="username" name="username" placeholder="نام کاربری">
+                
+                <label for="email">ایمیل</label>
+                <input type="email" id="email" name="email" placeholder="ایمیل">
+                
+                <label for="phone">شماره تلفن</label>
+                <input type="text" id="phone" name="phone" placeholder="شماره تلفن">
+                
+                <label for="password">رمز عبور</label>
+                <input type="password" id="password" name="password" placeholder="رمز عبور">
+                
+                <label for="confirm-password">تایید رمز عبور</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="تایید رمز عبور">
+                
+                <label>اشتراک در ایمیل:</label>
+                <div class="radio-container">
+                    <div class="radio-options">
+                        <label for="subscribe-yes">بله</label>
+                        <input type="radio" id="subscribe-yes" name="subscribe" value="yes" checked>
+                        <label for="subscribe-no">خیر</label>
+                        <input type="radio" id="subscribe-no" name="subscribe" value="no">
+                    </div>
+                </div>
+
+                <button type="submit" id="submitsign">ثبت نام</button>
+            </form>
+            <p><a href="../LoginPage/login.html">ورود</a></p>
+        </div>
+        <div class="back-button" id="backButton">
+            <img src="home.png" alt="Back">
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suggestion Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-div">
+          <a class="logo" href="" style="text-decoration: none">
+            <img src="logo_header.svg" class="llogo" alt="green-garden-log" />
+            Green Garden
+          </a>
+        </div>
+        <div id="navigation">
+          <nav class="navigation-menu">
+            <ul>
+              <li><a href="#">صفحه اصلی</a></li>
+              <li><a href="#">پیشنهاد گیاه</a></li>
+              <li><a href="#">درباره ما</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="button-container">
+          <button class="icon-button icon-search">
+            <img src="search.svg" alt="Search-Icon" />
+          </button>
+          <button class="icon-button icon-back-green">
+            <img src="saved.svg" alt="Saved-Icon" />
+          </button>
+          <button class="icon-button icon-back-green">
+            <img src="user_icon.svg" alt="User-Icon" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="suggest-plant">
+        <h1>اکنون پیشنهاد بگیر!</h1>
+        <p>موارد ستاردار اجباری است :)</p>
+        <form action="#" method="POST" id="plant-form">
+          <div class="form-group">
+            <label for="plant-type"
+              >نوع گیاه <span class="text-danger">*</span>:</label
+            >
+            <select id="plant-type" name="plant-type" required>
+              <option value="">انتخاب کنید</option>
+              <option value="flower">گل</option>
+              <option value="tree">درخت</option>
+              <option value="herb">گیاه</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="environment-type"
+              >نوع محیط <span class="text-danger">*</span>:</label
+            >
+            <select id="environment-type" name="environment-type" required>
+              <option value="">انتخاب کنید</option>
+              <option value="indoor">داخل ساختمان</option>
+              <option value="outdoor">بیرون</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="light-level"
+              >میزان نور <span class="text-danger">*</span>:</label
+            >
+            <select id="light-level" name="light-level" required>
+              <option value="">انتخاب کنید</option>
+              <option value="low">کم</option>
+              <option value="medium">متوسط</option>
+              <option value="high">زیاد</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="temperature"
+              >دما <span class="text-danger">*</span>:</label
+            >
+            <select id="temperature" name="temperature" required>
+              <option value="">انتخاب کنید</option>
+              <option value="cold">سرد</option>
+              <option value="moderate">متوسط</option>
+              <option value="hot">گرم</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="humidity-level"
+              >میزان آبیاری <span class="text-danger">*</span>:</label
+            >
+            <select id="humidity-level" name="humidity-level" required>
+              <option value="">انتخاب کنید</option>
+              <option value="low">کم</option>
+              <option value="medium">متوسط</option>
+              <option value="high">زیاد</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="growth-stage">مرحله رشد:</label>
+            <select id="growth-stage" name="growth-stage">
+              <option value="">انتخاب کنید</option>
+              <option value="seed">بذر</option>
+              <option value="young">جوان</option>
+              <option value="mature">بالغ</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="scent">عطری:</label>
+            <select id="scent" name="scent">
+              <option value="">انتخاب کنید</option>
+              <option value="yes">بله</option>
+              <option value="no">خیر</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="season">فصلی:</label>
+            <select id="season" name="season">
+              <option value="">انتخاب کنید</option>
+              <option value="spring">بهار</option>
+              <option value="summer">تابستان</option>
+              <option value="fall">پاییز</option>
+              <option value="winter">زمستان</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="edible">خوراکی:</label>
+            <select id="edible" name="edible">
+              <option value="">انتخاب کنید</option>
+              <option value="yes">بله</option>
+              <option value="no">خیر</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="harvest-time">زمان رسیدگی:</label>
+            <select id="harvest-time" name="harvest-time">
+              <option value="">انتخاب کنید</option>
+              <option value="short">کوتاه</option>
+              <option value="medium">متوسط</option>
+              <option value="long">طولانی</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="allergies">حساسیت:</label>
+            <select id="allergies" name="allergies">
+              <option value="">انتخاب کنید</option>
+              <option value="yes">بله</option>
+              <option value="no">خیر</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pet-friendly">حیوان خانگی:</label>
+            <select id="pet-friendly" name="pet-friendly">
+              <option value="">انتخاب کنید</option>
+              <option value="yes">بله</option>
+              <option value="no">خیر</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn">جستجو</button>
+        </form>
+        <div id="suggestion-result"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="section">
+          <img src="lg.svg" alt="Green Garden" />
+          <p>
+            با خیالی آسوده گیاهی که مدت‌هاست دنبال آن می‌گردید را در اینجا پیدا
+            کنید.
+          </p>
+        </div>
+        <div class="section">
+          <h5>شرکت</h5>
+          <ul class="list">
+            <li>
+              <a href="">
+                <svg
+                  class="svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m11.29 12l3.54-3.54a1 1 0 0 0 0-1.41a1 1 0 0 0-1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42L13.41 17a1 1 0 0 0 .71.29a1 1 0 0 0 .71-.29a1 1 0 0 0 0-1.41Z"
+                  />
+                </svg>
+                درباره ما
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <svg
+                  class="svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m11.29 12l3.54-3.54a1 1 0 0 0 0-1.41a1 1 0 0 0-1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42L13.41 17a1 1 0 0 0 .71.29a1 1 0 0 0 .71-.29a1 1 0 0 0 0-1.41Z"
+                  />
+                </svg>
+                ورود
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <h5>خبرنامه</h5>
+          <p>ثبت نام کنید و آخرین نکات را از طریق ایمیل دریافت کنید.</p>
+          <form>
+            <div class="form-section">
+              <div class="form-email">
+                <label class="form-label"
+                  >ایمیل خود را بنویسید
+                  <span style="color: #e43f52 !important">*</span>
+                </label>
+                <br /><input
+                  type="email"
+                  name="email"
+                  id="emailsubscribe"
+                  class="form-control-email"
+                  placeholder="ایمیل شما: "
+                  required=""
+                />
+              </div>
+
+              <div class="form-news">
+                <input
+                  type="submit"
+                  id="submitsubscribe"
+                  name="send"
+                  class="btn-form-news"
+                  value="خبرنامه"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <button id="scrollTopBtn" class="scroll-to-top">
+      <svg
+        xmlns="https://www.svgrepo.com/svg/93813/up-arrow"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"
+        ></path>
+      </svg>
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>

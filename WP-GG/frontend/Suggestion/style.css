@@ -1,0 +1,418 @@
+/* styles.css */
+body {
+    direction: rtl; /* جهت نوشتار راست به چپ */
+    font-family: 'Tahoma', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+
+}
+
+/* اعمال فونت به تگ option */
+option {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 14px; /* تنظیم اندازه فونت */
+}
+
+
+header {
+    background: url('22.png') center center;
+    background-size: cover;
+    border-radius: 0 0 70% 70% / 0 0 40px 40px;
+    height: 300px;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 24px;
+    padding: 6px 0 6px;
+    letter-spacing: 0px;
+    line-height: 68px;
+    float: right;
+    color: #fdd05aeb !important;
+    align-items: stretch;
+    display: flex;
+}
+
+header .logo .llogo{
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+}
+
+
+#navigation { 
+    display:flex; 
+    align-items: center; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+} 
+  
+ 
+.navigation-menu{ 
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0 
+} 
+ 
+.navigation-menu li { 
+    display: inline-block; 
+    margin: 0 10px; 
+    padding: 5px 10px; 
+     
+} 
+  
+.navigation-menu li a { 
+    display: inline-block; 
+    color: rgb(49 214 143); 
+    font-size: 15px; 
+    background-color: transparent !important; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    transition: all 0.5s; 
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    padding: 10px 15px; 
+    text-decoration: none; 
+ 
+} 
+ 
+a { 
+    text-decoration: none !important; 
+} 
+ 
+.navigation-menu li a:hover{ 
+   color: rgb(62, 212, 110); 
+   cursor: pointer; 
+   font-size: 20px; 
+} 
+
+.button-container { 
+    display: flex; 
+    align-items: center; 
+    margin-left: 110px; /* فاصله از سمت چپ */ 
+} 
+ 
+.icon-button { 
+    background: none; 
+    border: none; 
+    margin: 0 3px; /* فاصله کم بین دکمه‌ها */ 
+    cursor: pointer; 
+    padding: 5px; /* اندازه کوچکتر دکمه‌ها */ 
+} 
+ 
+.icon-button img { 
+    width: 24px; 
+    height: 22px; 
+} 
+ 
+.icon-search img { 
+    filter: invert(43%) sepia(78%) saturate(471%) hue-rotate(91deg) brightness(90%) contrast(89%); /* رنگ سبز */ 
+} 
+ 
+.icon-back-green { 
+    background-color: rgba(0, 128, 0, 0.572); /* پس‌زمینه سبز */ 
+    border-radius: 20%; /* دایره‌ای کردن دکمه‌ها */ 
+    padding: 5px; /* اندازه کوچکتر دکمه‌ها */ 
+} 
+ 
+.icon-back-green img { 
+    filter: brightness(0) saturate(100%) invert(87%) sepia(89%) saturate(747%) hue-rotate(1deg) brightness(89%) contrast(106%); /* رنگ زرد */ 
+}
+
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.suggest-plant {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.suggest-plant h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.suggest-plant p {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* تنظیم فرم به صورت Flexbox */
+form {
+    direction: rtl; /* جهت نوشتار راست به چپ */
+    flex-wrap: wrap; /* اجازه به فیلدها برای رفتن به خطوط جدید در صورت نیاز */
+    justify-content: center; /* تراز کردن فیلدها به مرکز */
+    gap: 1px; /* فاصله بین فیلدها */
+    display: flex;
+}
+
+.form-group {
+    flex: 0 0 15%;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* تغییر طول و بوردر فیلدهای فرم */
+.form-group select {
+    width: 100%;
+    max-width: 160px; /* کاهش طول */
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px; /* تنظیم اندازه فونت */
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    -moz-appearance: none; /* حذف استایل پیش‌فرض مرورگر */
+    -webkit-appearance: none; /* برای مرورگرهای وب‌کیت */
+    appearance: none; /* برای مرورگرهای فایرفاکس */
+    border: 2px solid #487809aa;
+    box-sizing: border-box;
+    color: #487809a3; /* رنگ فونت معمولی */
+}
+
+/* تغییر رنگ و کادر در حالت hover */
+.form-group select:hover {
+    color: #ce5c15a3; /* رنگ فونت معمولی */
+    background-color: #efecec; /* رنگ پس‌زمینه در حالت hover */
+    border-color: #666; /* رنگ کادر در حالت hover */
+}
+
+
+/* استایل برای گزینه‌ی انتخاب نشده */
+option[value=""] {
+    color: #939292; /* رنگ فونت گزینه‌ی انتخاب نشده */
+    background-color: #f0f0f0; /* رنگ پس‌زمینه گزینه‌ی انتخاب نشده */
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    width: 220px;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+.ibm-plex-sans-arabic-semibold {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.text-danger {
+    color: #e43f52 !important
+}
+.icons{
+    width: 20px;
+    height: 20px;
+}
+footer { 
+    height: 420px; 
+    background: #003a32; 
+    padding: 60px 0; 
+    position: relative; 
+    color: #adb5bd; 
+} 
+ 
+footer .container { 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding-right: var(--bs-gutter-x, .75rem); 
+ } 
+ 
+footer .section { 
+    flex: 1; 
+    min-width: 200px; 
+    margin: 10px; 
+} 
+ 
+footer .section img { 
+    margin-bottom: 10px; 
+    width: 166px; 
+    height: 123px; 
+} 
+ 
+footer .section p { 
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 16px; 
+    margin-top: 1.5rem !important; 
+    line-height: 1.6; 
+} 
+ 
+footer .section h5 { 
+    font-family: "IBM Plex Sans Arabic", sans-serif !important;
+    letter-spacing: 0px; 
+    font-weight: 500; 
+    color: #f8f9fc !important; 
+    margin-bottom: 8px; 
+    font-family: IRANSansfanum; 
+    line-height: 1.5; 
+    font-size: 20px; 
+ 
+} 
+ 
+footer .list { 
+    list-style: none; 
+    padding: 0; 
+    margin-bottom:0 ; 
+    margin-top: 1.5rem !important; 
+    padding-right: 2rem; 
+} 
+ 
+footer .section ul li { 
+    margin-bottom: 10px; 
+} 
+ 
+footer .section ul li a { 
+    color: #adb5bd; 
+    text-decoration: none; 
+    font-size: 16px; 
+} 
+
+footer .section ul li a:hover { 
+    color: #f8f9fc; 
+} 
+
+.form-section{ 
+      
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    flex-direction: column; 
+ 
+    margin-top: calc(var(--bs-gutter-y)* -1); 
+    margin-left: calc(var(--bs-gutter-x) / -2); 
+    margin-right: calc(var(--bs-gutter-x) / -2); 
+} 
+ 
+.form-email { 
+    margin-bottom: 1rem !important; 
+    box-sizing: border-box;    
+} 
+
+.form-label { 
+    font-weight: 700; 
+    font-size: 14px; 
+    display: inline-block; 
+    width: 220px;
+} 
+
+.form-control-email { 
+     
+    margin-top: 5px; 
+    background-color: #35876a; 
+    border: 1px solid #1e9e76; 
+    box-shadow: inset 0px 0px 1px 1px #d9ceba; 
+    font-size: 14px; 
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    line-height: 26px; 
+    color: #96a785 !important; 
+    margin-bottom: 25px; 
+    border-radius: 6px; 
+    padding-right: 3rem !important; 
+    padding: 10px; 
+  
+}  
+ 
+input::-webkit-input-placeholder { 
+    color: #c4c4c4; /* رنگ خاکستری روشن */ 
+} 
+ 
+.form-news{ 
+    display: grid; 
+    box-sizing: border-box; 
+    width: 220px ; 
+    height: 45px; 
+} 
+
+.btn-form-news { 
+    cursor: pointer; 
+    box-shadow: 0 3px 5px 0 rgba(109, 199, 122, 0.3); 
+    border: 1px solid rgba(109, 199, 122, 0.1) !important; 
+    background-color: rgba(109, 199, 122, 0.1) !important; 
+    color: #6dc77a !important; 
+    padding: 8px 20px; 
+    outline: none; 
+    text-decoration: none; 
+    font-size: 16px; 
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    letter-spacing: 0px; 
+    transition: all 0.3s; 
+    font-weight: 600; 
+    border-radius: 6px; 
+    box-sizing: border-box; 
+} 
+  
+.form-news:hover{ 
+    
+    background-color: #caf6d1 ; 
+    border-radius: 6px; 
+    color: white; 
+ 
+} 
+ 
+footer .svg { 
+    margin-left: .25rem !important; 
+}
+
+/* Scroll to Top Button */ 
+.scroll-to-top { 
+    position: fixed; 
+    bottom: 17px; 
+    right: 30px; 
+    background-color: #6ed47a; /* رنگ پس‌زمینه دکمه */ 
+    border: none; 
+    cursor: pointer; 
+    display: none; /* پیش‌فرض نمایش داده نشود */ 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+ } 
+ 
+.scroll-to-top svg { 
+    width: 20px; 
+    height: 20px; 
+    fill: white; 
+    position: absolute; 
+    left: 20.5px; 
+    transform: translateX(-50%) translateY(-50%);  
+    /* این ویژگی‌ها عنصر را به اندازه 50 درصد از عرض به سمت چپ و  50 درصد از ارتفاع به سمت بالا*/ 
+     
+} 
+ 
+.scroll-to-top:hover { 
+    background-color: #5ca968; /* رنگ پس‌زمینه دکمه با هوور */ 
+    cursor: pointer; 
+    bottom: 30px; 
+} 
+/**/

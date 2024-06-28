@@ -1,3 +1,18 @@
+@font-face {
+    font-family: IRANSansfanum;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../HomePage/fonts/iransansfanum/eot/IRANSansWeb(FaNum)_Black.eot');
+    src: url('../HomePage/fonts/iransansfanum/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../HomePage/fonts/iransansfanum/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../HomePage/fonts/iransansfanum/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../HomePage/fonts/iransansfanum/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+/* end font sec*/
+
 /* styles.css */
 body {
     direction: rtl; /* جهت نوشتار راست به چپ */
@@ -233,7 +248,7 @@ option[value=""] {
     height: 20px;
 }
 footer { 
-    height: 420px; 
+    height: 300px; 
     background: #003a32; 
     padding: 60px 0; 
     position: relative; 
@@ -318,18 +333,18 @@ footer .section ul li a:hover {
 .form-email { 
     margin-bottom: 1rem !important; 
     box-sizing: border-box;    
+        /* font-family: IRANSansfanum; */
+
 } 
 
 .form-label { 
     font-weight: 700; 
     font-size: 14px; 
     display: inline-block; 
-    width: 220px;
-} 
+ } 
 
 .form-control-email { 
-     
-    margin-top: 5px; 
+    margin-top: 7px; 
     background-color: #35876a; 
     border: 1px solid #1e9e76; 
     box-shadow: inset 0px 0px 1px 1px #d9ceba; 
@@ -339,9 +354,9 @@ footer .section ul li a:hover {
     color: #96a785 !important; 
     margin-bottom: 25px; 
     border-radius: 6px; 
-    padding-right: 3rem !important; 
+    padding-right: 16px !important; 
     padding: 10px; 
-  
+    width: 195px;
 }  
  
 input::-webkit-input-placeholder { 
@@ -478,4 +493,8 @@ footer .svg {
 #timer {
     margin-top: 10px;
     font-weight: bold;
+    font-family: IRANSansfanum;
+}
+#time {
+    font-family: IRANSansfanum;
 }

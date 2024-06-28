@@ -1,7 +1,7 @@
 @font-face {
     font-family: IRANSansfanum;
     font-style: normal;
-    font-weight: 900;
+    font-weight: normal;
     src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum)_Black.eot');
     src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),
         /* IE6-8 */
@@ -11,85 +11,16 @@
         /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
         url('../fonts/iransansfanum/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
 }
-
-@font-face {
-    font-family: IRANSansfanum;
-    font-style: normal;
-    font-weight: bold;
-    src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum)_Bold.eot');
-    src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),
-        /* IE6-8 */
-        url('../fonts/iransansfanum/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),
-        /* FF39+,Chrome36+, Opera24+*/
-        url('../fonts/iransansfanum/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),
-        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url('../fonts/iransansfanum/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: IRANSansfanum;
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum)_Medium.eot');
-    src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'),
-        /* IE6-8 */
-        url('../fonts/iransansfanum/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),
-        /* FF39+,Chrome36+, Opera24+*/
-        url('../fonts/iransansfanum/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),
-        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url('../fonts/iransansfanum/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: IRANSansfanum;
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum)_Light.eot');
-    src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),
-        /* IE6-8 */
-        url('../fonts/iransansfanum/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),
-        /* FF39+,Chrome36+, Opera24+*/
-        url('../fonts/iransansfanum/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),
-        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url('../fonts/iransansfanum/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: IRANSansfanum;
-    font-style: normal;
-    font-weight: 200;
-    src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum)_UltraLight.eot');
-    src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'),
-        /* IE6-8 */
-        url('../fonts/iransansfanum/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),
-        /* FF39+,Chrome36+, Opera24+*/
-        url('../fonts/iransansfanum/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),
-        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url('../fonts/iransansfanum/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: IRANSansfanum;
-    font-style: normal;
-    font-weight: normal;
-    src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum).eot');
-    src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),
-        /* IE6-8 */
-        url('../fonts/iransansfanum/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),
-        /* FF39+,Chrome36+, Opera24+*/
-        url('../fonts/iransansfanum/woff/IRANSansWeb(FaNum).woff') format('woff'),
-        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url('../fonts/iransansfanum/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
-}
 /* end font sec*/
 
 body{
     direction: rtl;
     text-align: right;
-    font-family: IRANSansfanum;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
     overflow-x: hidden !important;
     font-size: 16px;
-    color: #161c2d; 
+    color: #161c2d;
+    margin: 0; 
 } 
 header {
     display: block;
@@ -173,26 +104,21 @@ header {
 }
 
 .navigation-menu li {
-    /* float: flex;
-    display: inline-block;
-    position: relative; */
     margin: 0 10px;
     padding: 5px 10px;
-    
 }
  
 .navigation-menu li a {
     display: inline-block;
     color: rgb(49 214 143);
-    font-size: 15px;
+    font-size: 16px;
     background-color: transparent !important;
-    font-weight: 700;
+    font-weight: bold;
     text-transform: uppercase;
     transition: all 0.5s;
-    font-family: IRANSansfanum;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
     padding: 10px 15px;
     text-decoration: none;
-
 }
 
 a {
@@ -262,8 +188,7 @@ a {
     text-align: right;
     font-weight: 700 !important; 
     line-height: 1.2;
-    
-    font-family: IRANSansfanum   
+    font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 .accr-taste {
     color: #6dc77a !important;
@@ -309,7 +234,7 @@ a {
     letter-spacing: 0px;
     font-size: 35px !important;
     color: #57453b;
-    font-family: IRANSansfanum;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
     line-height: 1.5;
     font-weight: 600;
     margin-top: 0;
@@ -488,7 +413,7 @@ footer {
     font-weight: 500;
     color: #f8f9fc !important;
     margin-bottom: 8px;
-    font-family: IRANSansfanum;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
     line-height: 1.5;
     font-size: 20px;
 
@@ -535,17 +460,19 @@ footer {
     display: inline-block;
 }
 .form-control-email {
-    margin-top: 5px;
+    margin-top: 7px;
     background-color: #35876a;
     border: 1px solid #1e9e76;
     box-shadow: inset 0px 0px 1px 1px #d9ceba;
     font-size: 14px;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
     line-height: 26px;
     color: #96a785 !important;
     margin-bottom: 25px;
     border-radius: 6px;
-    padding-right: 3rem !important;
+    padding-right: 16px !important;
     padding: 10px;
+    width: 220px;
 } 
 
 input::-webkit-input-placeholder {
@@ -567,6 +494,7 @@ input::-webkit-input-placeholder {
     padding: 8px 20px;
     outline: none;
     text-decoration: none;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
     font-size: 16px;
     letter-spacing: 0px;
     transition: all 0.3s;
@@ -652,6 +580,10 @@ input::-webkit-input-placeholder {
 #timer {
   margin-top: 10px;
   font-weight: bold;
+  font-family: IRANSansfanum;
+}
+#time , .numbertext{
+    font-family: IRANSansfanum;
 }
 
 /***/
@@ -678,10 +610,11 @@ input::-webkit-input-placeholder {
 .about-main h4, .introducing-us-text h4  {
     color: #57453b;
     line-height: 1.5;
-    font-weight: 600;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 38px;
     margin-top: 0;
     margin-bottom: 1.5rem;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
 } 
 
 /**/
@@ -699,8 +632,6 @@ input::-webkit-input-placeholder {
 .about-us-img {
     box-sizing: border-box;
     border-radius: 6px;
-    /* margin-left: auto !important;
-    margin-right: auto !important; */
     max-width: 100%;
     height: 350px;
     right: 0;
@@ -716,11 +647,12 @@ input::-webkit-input-placeholder {
    margin-right: 60px;
  }
  .introducing-us-text p {
-    color: #8492a6 !important;
+    color: #636b77 !important;
     direction: rtl;
     line-height: 1.6 ;
+    font-size: 18px;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     box-sizing: border-box;
  }
 
@@ -769,7 +701,7 @@ input::-webkit-input-placeholder {
  .properties-boxes img {
     margin: 12px;
     margin-left: 16px;     
-    border-radius: 50%;
+    border-radius: 45%;
     height: 35px;
     width: 35px;
     color: #6dc77a !important;
@@ -804,7 +736,7 @@ input::-webkit-input-placeholder {
     box-sizing: border-box;
     color: #170c47;
     font-size: 18px;
-    margin-right: 30px;  
+    margin-right: 40px;  
  }
  .our-info h5:hover{
     color: #2daa3f;

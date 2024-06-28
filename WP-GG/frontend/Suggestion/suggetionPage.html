@@ -14,49 +14,77 @@
     <link rel="icon" type="image/x-icon" href="../HomePage/img/favicon.ico" />
   </head>
   <body>
-    <header>
+    <header id="topnav">
       <div class="container">
         <div class="logo-div">
-          <a class="logo" href="../HomePage/index.html" style="text-decoration: none">
-            <img src="logo_header.svg" class="llogo" alt="green-garden-log" />
+          <a
+            class="logo"
+            href="../HomePage/index.html"
+            style="text-decoration: none"
+          >
+            <img
+              src="img/logo_header.svg"
+              class="logo-img"
+              alt="green-garden-log"
+            />
             Green Garden
           </a>
         </div>
         <div id="navigation">
-          <nav class="navigation-menu">
-            <ul>
-              <li><a href="../HomePage/index.html">صفحه اصلی</a></li>
-              <li><a href="#">پیشنهاد گیاه</a></li>
-              <li><a href="../AboutUs/aboutUs.html">درباره ما</a></li>
-            </ul>
-          </nav>
+          <ul class="navigation-menu">
+            <li>
+              <a href="../HomePage/index.html">صفحه اصلی</a>
+            </li>
+            <li>
+              <a href="#">پیشنهاد گیاه </a>
+            </li>
+            <li>
+              <a href="../AboutUs/aboutUs.html">درباره ما </a>
+            </li>
+          </ul>
         </div>
         <div class="button-container">
-                     
-          <a class="icon-button icon-search" href="#newsBanner" onclick="startTimer()">
-              <img src="search.svg" alt="Search-Icon" >
+          <a
+            class="icon-button icon-search"
+            href="#newsBanner"
+            onclick="startTimer()"
+          >
+            <img src="img/search.svg" alt="Search-Icon" />
           </a>
-          
-          <a class="icon-button icon-back-green" href="#newsBanner" onclick="startTimer()">
-              <img src="saved.svg" alt="Saved-Icon">
+
+          <a
+            class="icon-button icon-back-green"
+            href="#newsBanner"
+            onclick="startTimer()"
+          >
+            <img src="img/saved.svg" alt="Saved-Icon" />
           </a>
-          <a class="icon-button icon-back-green" href="../loginPage/login.html">
-              <img src="user_icon.svg" alt="User-Icon">
+          <a
+            id="usIc"
+            class="icon-button icon-back-green"
+            href="../loginPage/login.html"
+          >
+            <img src="img/user_icon.svg" alt="User-Icon" />
           </a>
-          
-          <!-- بنر   -->
+
           <div id="newsBanner" class="news-Banner">
-              <div class="newsBanner-content">
+            <div class="newsBanner-content">
               <a href="#" class="close-btn" onclick="stopTimer()">&times;</a>
-              <img src="../HomePage/img/404 Error.gif" alt="خبرنامه" class="newsBanner-image">
-              <p class="newsBanner-text"> این صفحه هنوز درست نشده !!</p>
+              <img
+                src="../HomePage/img/404 Error.gif"
+                alt="خبرنامه"
+                class="newsBanner-image"
+              />
+              <p class="newsBanner-text">این صفحه هنوز درست نشده !!</p>
               <p id="timer">زمان باقی‌مانده: <span id="time">3</span> ثانیه</p>
-              </div>
+            </div>
           </div>
-      </div>
         </div>
       </div>
     </header>
+    <section class="main-section">
+      <div class="content"></div>
+    </section>
     <main>
       <section class="suggest-plant">
         <h1>اکنون پیشنهاد بگیر!</h1>
@@ -184,7 +212,7 @@
     <footer>
       <div class="container">
         <div class="section">
-          <img src="lg.svg" alt="Green Garden" />
+          <img src="img/lg.svg" alt="Green Garden" />
           <p>
             با خیالی آسوده گیاهی که مدت‌هاست دنبال آن می‌گردید را در اینجا پیدا
             کنید.

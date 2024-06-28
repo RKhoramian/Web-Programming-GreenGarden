@@ -29,120 +29,145 @@ option {
     font-size: 14px; /* تنظیم اندازه فونت */
 }
 
+#topnav{
+    position: fixed; /*فیکس بمونه و با اسکرول حرکت*/
+    width: 100%; 
+    margin: auto;
+    height:90px;
+   
+    /* background-color: transparent; */
+    background-color: #ffffff;
+    border: 0;
+    box-shadow: 0px 0px 6px #6dc77a5c;
+    border-radius: 0px 0px 12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
 
 header {
-    background: url('22.png') center center;
-    background-size: cover;
-    border-radius: 0 0 70% 70% / 0 0 40px 40px;
-    height: 300px;
-    padding: 20px 0;
+    display: block;
+    unicode-bidi: isolate;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    top: 0;
+     
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* تنظیم z-index برای header */
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
 }
 
 header .container {
-    display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin: auto;
-}
-
-header .logo {
-    font-weight: 700;
-    font-size: 24px;
-    padding: 6px 0 6px;
-    letter-spacing: 0px;
-    line-height: 68px;
-    float: right;
-    color: #fdd05aeb !important;
-    align-items: stretch;
+    padding: auto 12px;
+    margin: 0 auto;
     display: flex;
 }
+ 
+.logo-div{
+    margin-right: 80px;
+    align-items: center;
+    display: flex;     
+}
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #fdd05aeb !important;
+    align-items: center;
+    display: flex;  
+}
+ 
+ .logo-img{
+    width: 65px;
+    height: 65px;
+    vertical-align: middle;
+    margin-left: 10px;
+ }
 
-header .logo .llogo{
-    display: inline-block;
-    width: 56px;
-    height: 56px;
+#navigation {
+    display:flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ 
+
+.navigation-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0
 }
 
-
-#navigation { 
-    display:flex; 
-    align-items: center; 
-    position: absolute; 
-    left: 50%; 
-    transform: translateX(-50%); 
-} 
-  
+.navigation-menu li {
+    margin: 0 10px;
+    padding: 5px 10px;
+}
  
-.navigation-menu{ 
-    display: flex; 
-    list-style: none; 
-    margin: 0; 
-    padding: 0 
-} 
- 
-.navigation-menu li { 
-    display: inline-block; 
-    margin: 0 10px; 
-    padding: 5px 10px; 
-     
-} 
-  
-.navigation-menu li a { 
-    display: inline-block; 
-    color: rgb(49 214 143); 
-    font-size: 15px; 
-    background-color: transparent !important; 
-    font-weight: 700; 
-    text-transform: uppercase; 
-    transition: all 0.5s; 
+.navigation-menu li a {
+    display: inline-block;
+    color: rgb(49 214 143);
+    font-size: 16px;
+    background-color: transparent !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s;
     font-family: "IBM Plex Sans Arabic", sans-serif;
-    padding: 10px 15px; 
-    text-decoration: none; 
- 
-} 
- 
-a { 
-    text-decoration: none !important; 
-} 
- 
-.navigation-menu li a:hover{ 
-   color: rgb(62, 212, 110); 
-   cursor: pointer; 
-   font-size: 20px; 
-} 
+    padding: 10px 15px;
+    text-decoration: none;
+}
 
-.button-container { 
-    display: flex; 
-    align-items: center; 
-    margin-left: 110px; /* فاصله از سمت چپ */ 
-} 
- 
-.icon-button { 
-    background: none; 
-    border: none; 
-    margin: 0 3px; /* فاصله کم بین دکمه‌ها */ 
-    cursor: pointer; 
-    padding: 5px; /* اندازه کوچکتر دکمه‌ها */ 
-} 
- 
-.icon-button img { 
-    width: 24px; 
-    height: 22px; 
-} 
- 
-.icon-search img { 
-    filter: invert(43%) sepia(78%) saturate(471%) hue-rotate(91deg) brightness(90%) contrast(89%); /* رنگ سبز */ 
-} 
- 
-.icon-back-green { 
-    background-color: rgba(0, 128, 0, 0.572); /* پس‌زمینه سبز */ 
-    border-radius: 20%; /* دایره‌ای کردن دکمه‌ها */ 
-    padding: 5px; /* اندازه کوچکتر دکمه‌ها */ 
-} 
- 
-.icon-back-green img { 
-    filter: brightness(0) saturate(100%) invert(87%) sepia(89%) saturate(747%) hue-rotate(1deg) brightness(89%) contrast(106%); /* رنگ زرد */ 
+a {
+    text-decoration: none !important;
+}
+
+.navigation-menu li a:hover{
+   color: rgb(62, 212, 110);
+   cursor: pointer;
+   font-size: 20px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-left: 110px; /* فاصله از سمت چپ */
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    margin: 0 3px; /* فاصله کم بین دکمه‌ها */
+    cursor: pointer;
+    padding: 5px; /* اندازه کوچکتر دکمه‌ها */
+}
+
+.icon-button img {
+    width: 24px;
+    height: 22px;
+}
+
+.icon-search img {
+    filter: invert(43%) sepia(78%) saturate(471%) hue-rotate(91deg) brightness(160%) contrast(89%); /*رنگ سبز*/
+}
+
+.icon-back-green {
+    background-color: rgba(0, 128, 0, 0.572); /* پس‌زمینه سبز */
+    border-radius: 20%; /* دایره‌ای کردن دکمه‌ها */
+    padding: 5px; /* اندازه کوچکتر دکمه‌ها */
+}
+
+.icon-back-green img {
+    filter: brightness(0) saturate(100%) invert(87%) sepia(89%) saturate(747%) hue-rotate(1deg) brightness(89%) contrast(106%); /* رنگ زرد */
 }
 
 
@@ -151,7 +176,24 @@ main {
     margin: auto;
     padding: 20px 0;
 }
-
+.main-section {
+    background: url("img/22.png") center center;
+    height: 502px;
+    top: 90px;
+    position: relative;
+    z-index: 900; /* تنظیم z-index برای main-section */
+    border-radius: 0 0 70% 70% / 0 0 40px 40px;
+    margin-bottom: 100px;
+}
+.content{
+    width: 100%;
+    padding-left: var(--bs-gutter-x, .75rem);
+    padding-right: var(--bs-gutter-x, .75rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-right: 180px;
+}
 .suggest-plant {
     background-color: #fff;
     border-radius: 8px;
@@ -248,7 +290,7 @@ option[value=""] {
     height: 20px;
 }
 footer { 
-    height: 300px; 
+    height: 400px; 
     background: #003a32; 
     padding: 60px 0; 
     position: relative; 

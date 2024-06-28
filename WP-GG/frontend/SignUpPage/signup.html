@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Page</title>
     <link rel="stylesheet" href="signup.css">
-    <link href="https://fonts.googleapis.com/css2?family=Vazir&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
     <div class="container">
@@ -14,22 +17,27 @@
         </div>
         <div class="signup-form">
             <h2>ثبت نام</h2>
-            <form action="#">
+            <form id="signupForm" action="#">
                 <label for="username">نام کاربری</label>
                 <input type="text" id="username" name="username" placeholder="نام کاربری">
-                
+                <span class="error-message" id="username-error"></span>
+
                 <label for="email">ایمیل</label>
                 <input type="email" id="email" name="email" placeholder="ایمیل">
-                
+                <span class="error-message" id="email-error"></span>
+
                 <label for="phone">شماره تلفن</label>
                 <input type="text" id="phone" name="phone" placeholder="شماره تلفن">
-                
+                <span class="error-message" id="phone-error"></span>
+
                 <label for="password">رمز عبور</label>
                 <input type="password" id="password" name="password" placeholder="رمز عبور">
-                
+                <span class="error-message" id="password-error"></span>
+
                 <label for="confirm-password">تایید رمز عبور</label>
-                <input type="password" id="confirm-password" name="confirm-password" placeholder="تایید رمز عبور">
-                
+                <input type="password" id="confirmpassword" name="confirmpassword" placeholder="تایید رمز عبور">
+                <span class="error-message" id="confpassword-error"></span>
+
                 <label>اشتراک در ایمیل:</label>
                 <div class="radio-container">
                     <div class="radio-options">

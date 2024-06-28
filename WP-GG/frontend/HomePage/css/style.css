@@ -41,8 +41,8 @@ header {
     margin: auto;
     height:90px;
    
-    background-color: transparent;
-    /* background-color: #ffffff; */
+    /* background-color: transparent; */
+    background-color: #ffffff;
       /*رنگ پس‌زمینه نوار شفاف است */
     border: 0;
     box-shadow: 0px 0px 6px #6dc77a5c;
@@ -590,9 +590,9 @@ input::-webkit-input-placeholder {
 /*              ABOUT US PAGE          */
 
 .about-main-section{
-    background: url("../img/mainPic.png") center center;
+    background: url("/WP-GG/frontend/AboutUs/img/22.png") center center;
     background-color: #2daa3f !important;
-    height: 370px;
+    height: 550px;
     position: relative;
     z-index: 900; /* تنظیم z-index برای main-section */
     border-radius: 0 0 70% 70% / 0 0 40px 40px;
@@ -615,7 +615,11 @@ input::-webkit-input-placeholder {
     margin-top: 0;
     margin-bottom: 1.5rem;
     font-family: "IBM Plex Sans Arabic", sans-serif;
-} 
+}
+.about-main h4 {
+    padding-top: 50px;
+    color:#2daa3f;
+}
 
 /**/
  .introduction{
@@ -650,7 +654,7 @@ input::-webkit-input-placeholder {
     color: #636b77 !important;
     direction: rtl;
     line-height: 1.6 ;
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 0;
     margin-bottom: 16px;
     box-sizing: border-box;

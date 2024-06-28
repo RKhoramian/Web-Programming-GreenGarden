@@ -1,0 +1,130 @@
+@font-face {
+    font-family: IRANSansfanum;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum)_Black.eot');
+    src: url('../fonts/iransansfanum/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/iransansfanum/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../fonts/iransansfanum/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/iransansfanum/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+/* end font sec*/
+body {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    margin: 0;
+    direction: rtl;
+}
+main{
+    display: flex;
+    margin-right: 200px;
+    margin-bottom: 200px;
+}
+
+.container2 {
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1000px;
+    height: 740px;
+    width: 100%;
+    margin: 20px;
+    top: 120px;
+    position: relative; /* Add relative positioning to the container */
+    
+}
+.avatar img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    margin: 20px;
+}
+.information-card {
+    background-color: #88cc88;
+    padding: 30px;
+    
+   
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.information-text{
+    margin: 20px;
+    padding: 20px;
+}
+.information-text  {
+    background-color: #bddb85;
+    
+    padding: 15px;
+    border-radius: 20px;
+    width: 350px;
+}
+
+.information-button {
+    background-color: #ffe066;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.edit-icon {
+    cursor: pointer;
+    margin-left: 10px;
+ }
+.hidden {
+    display: none;
+}
+.pass-btn {
+    border-radius: 6px;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    padding: 6px 10px 6px 10px;
+    border: 1px solid #ffe066;;
+    background-color: #ffe066;
+    margin-top: 12px;
+    margin-right: 25px;
+}
+
+.pass-btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    border: 1px solid #cdb554;
+    background-color: #cdb554;
+}
+.field-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.field-container label {
+    margin-right: 10px;
+}
+.field-container i {
+    margin-right: 10px;
+}
+.inputcont{
+    margin-right: 5px;
+    padding: 4px;
+}
+
+.information-button img {
+    /* width: 600px;
+    height: 400px; */
+
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+
+}

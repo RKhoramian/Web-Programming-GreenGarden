@@ -74,11 +74,28 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         confirmpasswordError.style.display = 'none';
     }
 
+     /////////////
+
+    // دریافت اطلاعات کاربر
+    const username = document.getElementById('username').value;
+   
+    // ذخیره اطلاعات کاربر در localStorage
+    localStorage.setItem('username', username);
+    localStorage.setItem('email', email);
+
+    localStorage.setItem('phone', phone);
+    localStorage.setItem('password', password);
+    ///
+
     // If all validations pass, allow form submission
     if (isValid) {
         alert('ثبت نام موفق بود');
         event.target.submit();
         window.location.href = '../homepage/index.html'; // Replace 'index.html' with the path to your home page
-
     }
+
+
 });
+
+//////
+

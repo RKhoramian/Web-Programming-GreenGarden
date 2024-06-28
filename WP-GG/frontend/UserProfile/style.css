@@ -115,13 +115,12 @@ main{
     margin-right: 10px;
 }
 .inputcont{
-    margin-right: 5px;
+    width: 150px;
+    margin-right: 2px;
     padding: 4px;
 }
 
 .information-button img {
-    /* width: 600px;
-    height: 400px; */
 
     width: 100%;
     height: auto;

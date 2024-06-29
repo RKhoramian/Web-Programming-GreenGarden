@@ -53,12 +53,14 @@ main{
 .information-card {
     background-color: #88cc88;
     padding: 30px;
-    
-   
     align-items: center;
     justify-content: center;
     flex: 1;
 }
+.information-card h1 {
+    margin-bottom: 35px;
+}
+
 .information-text{
     margin: 20px;
     padding: 20px;
@@ -82,7 +84,7 @@ main{
 
 .edit-icon {
     cursor: pointer;
-    margin-left: 10px;
+     margin-left: 10px;     
  }
 .hidden {
     display: none;
@@ -116,14 +118,12 @@ main{
 }
 .inputcont{
     width: 150px;
-    margin-right: 2px;
+    margin-right: 3px;
     padding: 4px;
 }
 
 .information-button img {
-
     width: 100%;
     height: auto;
     max-width: 550px;
-
 }
